@@ -1,0 +1,29 @@
+#foodlist{
+    /* border: 2px solid red; */
+    display: block;
+    width: 87%;
+
+    display: flex;
+    flex-wrap: wrap;
+    line-break: break-all;
+}
+
+.shimmer-container{
+    /* border: 2px solid red; */
+    width: 87%;
+    display: block;
+    margin: auto;
+    margin-top: 7rem;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.shimmer-card{
+    width: 235px;
+    height: 250px;
+    background-color: lightgray;
+    margin: 1rem;
+}
