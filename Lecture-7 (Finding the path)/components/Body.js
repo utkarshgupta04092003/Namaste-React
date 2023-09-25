@@ -29,37 +29,36 @@ function Body() {
 
   // get the restaurant details from swiggy api
   async function getRestaurants() {
-    // const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
-    // const json = await data.json();
-    const json = API_DATA;
-    console.log(json);
+    // handle the error using try... catch
+    try {
+      const response = await fetch(API_URL);
+      const json = await response.json();
 
-    async function checkJsonData(jsonData) {
-      for (let i = 0; i < jsonData?.data?.cards.length; i++) {
-        // initialize checkData for Swiggy Restaurant data
-        let checkData =
-          json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants;
+      // initialize checkJsonData() function to check Swiggy Restaurant data
+      async function checkJsonData(jsonData) {
+        for (let i = 0; i < jsonData?.data?.cards.length; i++) {
 
-        // if checkData is not undefined then return it
-        if (checkData !== undefined) {
-          return checkData;
+          // initialize checkData for Swiggy Restaurant data
+          let checkData = json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+          // if checkData is not undefined then return it
+          if (checkData !== undefined) {
+            return checkData;
+          }
         }
       }
+
+      // call the checkJsonData() function which return Swiggy Restaurant data
+      const resData = await checkJsonData(json);
+
+      // update the state variable restaurants with Swiggy API data
+      setRestaurants(resData);
+      setFilteredRestaurants(resData);
+    } catch (error) {
+      console.log('ERROR',error);
     }
-
-    // call the checkJsonData() function which return Swiggy Restaurant data
-    const resData = await checkJsonData(json);
-    // const resData = json;
-    console.log("resdata", json);
-    console.log(resData[0].info.name);
-
-    setRestaurants(resData);
-    setFilteredRestaurants(resData);
-    console.log('resdata',restaurants);
-
-    
-  } 
+  }
+  
 
   return (restaurants.length === 0)? (<Shimmer/>) : (
     <div id="body">
