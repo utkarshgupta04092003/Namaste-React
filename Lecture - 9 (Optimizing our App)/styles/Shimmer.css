@@ -1,0 +1,59 @@
+
+*{
+    border-radius: 3px;
+}
+.shimmer-container{
+    width: 87%;
+    display: block;
+    margin: auto;
+    margin-top: 7rem;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.shimmer-card{
+    width: 250px;
+    height: 300px;
+    margin: 1rem;
+    border: 2px solid lightgray;
+
+
+}
+
+
+.shimmer-img{
+    margin: 0.5rem;
+    height: 200px;
+    background-color: lightgray;
+
+}
+.shimmer-title{
+    margin: 0.5rem;
+    height: 20px;
+    width: 70%;
+    background-color: lightgray;
+
+    /* animation */
+
+
+}
+
+.shimmer-subtitle{
+    background-color: lightgray;
+
+    margin: 0.5rem;
+    height: 15px;
+}
+.shimmer-star-rate{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.shimmer-star-rate div{
+    background-color: lightgrey;
+    height: 15px;
+    width: 40%;
+}

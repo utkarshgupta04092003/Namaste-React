@@ -1,0 +1,118 @@
+/*  */
+#menushimmer-top{
+    /* border: 2px solid green; */
+    /* height: 250px; */
+    background-color: rgb(195, 195, 195);
+    display: flex;
+    justify-content: center;
+}
+#menushimmer-restaurant-details{
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 0.5rem;
+    /* justify-content: center; */
+    width: 70%;
+    background-color: white;
+    
+}
+#menushimmer-details-img{
+    /* border: 2px solid yellow; */
+    width: 400px;
+    height: 175px;
+    margin: 0.5rem;
+}
+#details-img img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+#menushimmer-details-detail{
+    /* border: 2px solid green; */
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#menushimmer-name{
+    /* border: 2px solid blue; */
+    text-align: left;
+    height: 20px;
+}
+
+
+#menushimmer-cuisines{
+    /* border: 2px solid red; */
+    font-weight: 600;
+    height: 20px;
+
+}
+#menushimmer-star-rate{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+#menushimmer-star, #menushimmer-rate, #menushimmer-time{
+    /* border: 2px solid red; */
+    padding: 0.3rem;
+    height: 10px;
+    width: 50px;
+
+}
+
+/* bottom part css */
+
+#menushimmer-bottom{
+    /* border: 2px solid red; */
+    width: 70%;
+    /* display: flex;
+    jus */
+    margin: auto;
+    margin-top: 2rem;
+}
+.menushimmer-rec{
+    /* border: 2px solid red; */
+    margin-bottom: 3px;
+    width: 15%;
+    height: 20px;
+}
+.menushimmer-rec-card{
+    border-bottom: 2px solid rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.menushimmer-rec-card-left{
+    /* border: 2px solid blue; */
+    width: 70%;
+}
+.menushimmer-card-heading{
+    /* border: 2px solid yellow; */
+    width: 20%;
+    height: 25px;
+    margin-bottom: 0.7rem;
+}
+.menushimmer-rec-card-left p{
+    /* border: 2px solid green; */
+    width: 30%;
+    height: 20px;
+}
+.menushimmer-rec-card-right{
+    /* border: 2px solid blue; */
+    width: 200px;
+    height: 150px;
+}
+.menushimmer-rec-card-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.menushimmer-add-btn{
+    /* border: 2px solid green; */
+    width: 60px;
+    height: 30px;
+}

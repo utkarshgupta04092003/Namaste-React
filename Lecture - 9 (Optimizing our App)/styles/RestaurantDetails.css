@@ -1,0 +1,85 @@
+#top{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+
+}
+#restaurant-details{
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 0.5rem;
+    /* justify-content: center; */
+    width: 70%;
+    color: white;
+}
+
+#details-img{
+    /* border: 2px solid yellow; */
+    width: 400px;
+    height: 200px;
+}
+#details-img img{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+#restaurant-details-detail{
+    /* border: 2px solid green; */
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#restaurant-name{
+    /* border: 2px solid blue; */
+    text-align: left;
+}
+#restaurant-cuisines{
+    /* border: 2px solid red; */
+    font-weight: 600;
+}
+#restaurant-star-rate{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+#restaurant-star{
+    /* border: 2px solid red; */
+    padding: 0.3rem;
+    background-color: red;
+}
+
+/* bottom part css */
+#bottom{
+    /* border: 2px solid red; */
+    width: 70%;
+    /* display: flex;
+    jus */
+    margin: auto;
+    margin-top: 2rem;
+}
+.rec-card{
+    border-bottom: 2px solid rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.rec-card-left{
+    /* border: 2px solid blue; */
+    width: 70%;
+}
+.rec-card-right{
+    /* border: 2px solid blue; */
+    width: 200px;
+    height: 150px;
+}
+.rec-card-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
